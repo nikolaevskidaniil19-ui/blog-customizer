@@ -4,13 +4,16 @@ import clsx from 'clsx';
 import { Article } from '../article/Article';
 import { ArticleParamsForm } from '../article-params-form/ArticleParamsForm';
 
-import { defaultArticleState, ArticleStateType } from './../../constants/articleProps';
+import {
+	defaultArticleState,
+	ArticleStateType,
+} from './../../constants/articleProps';
 
 import styles from './app.module.scss';
 
 export const App = () => {
-
-	const [articleState, setArticleState] = useState<ArticleStateType>(defaultArticleState);
+	const [articleState, setArticleState] =
+		useState<ArticleStateType>(defaultArticleState);
 
 	return (
 		<main
@@ -25,9 +28,9 @@ export const App = () => {
 				} as CSSProperties
 			}>
 			{/* Передаем стейт и функцию изменения в форму */}
-			<ArticleParamsForm 
-				currentSettings={articleState} 
-				onApply={setArticleState} 
+			<ArticleParamsForm
+				currentSettings={articleState}
+				onApply={setArticleState}
 			/>
 			<Article />
 		</main>
