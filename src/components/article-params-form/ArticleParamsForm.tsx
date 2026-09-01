@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef, FormEvent } from 'react';
 import clsx from 'clsx';
-import { ArrowButton } from 'src/ui/arrow-button';
-import { Button } from 'src/ui/button';
-import { Select } from 'src/ui/select/Select';
-import { Text } from 'src/ui/text';
+import { ArrowButton } from '../../ui/arrow-button';
+import { Button } from '../../ui/button';
+import { Select } from '../../ui/select/Select';
+import { Text } from '../../ui/text';
 import {
 	defaultArticleState,
 	ArticleStateType,
